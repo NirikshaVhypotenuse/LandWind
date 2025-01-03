@@ -9,11 +9,12 @@
             This free and open-source landing page template was built using the utility classes from Tailwind CSS.
           </p>
           <div class="mt-6 flex flex-col md:flex-row gap-4">
-            <button class="flex items-center gap-1 bg-gray-100 text-gray-600 px-6 py-3 rounded shadow" @click="navigateTo('https://github.com/themesberg/landwind')">
-                <LwIcon name="git" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
+            <button class="inline-flex items-center justify-center gap-2 bg-gray-100 hover:text-gray-900 text-gray-600 px-6 py-3 rounded shadow" @click="navigateTo('https://github.com/themesberg/landwind')">
+                <LwIcon name="git" class="hover:fill-gray-900 fill-gray-500"></LwIcon>
+                <!-- <LwIcon name="git" class="h-4 w-4 flex items-center hover:fill-gray-900 fill-gray-500 "></LwIcon> -->
                 View on GitHub</button>
-            <button class="flex items-center bg-purple-600 text-white px-6 py-3 rounded shadow" @click="navigateTo('https://www.figma.com/community/file/1125744163617429490')">
-            <img :src="icons.figma" class="w-4 h-4 mr-2" alt="figma icon">Get Figma file</button>
+            <button class="inline-flex items-center justify-center bg-gray-100 text-gray-600 px-6 py-3 rounded shadow" @click="navigateTo('https://www.figma.com/community/file/1125744163617429490')">
+            <img :src="icons.figma" class="w-4 h-4 mr-2 hover:text-gray-900" alt="figma icon">Get Figma file</button>
           </div>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -22,14 +23,14 @@
       </div>
     </section>
     <section class="bg-white dark:bg-gary-900">
-        <div class=" items-center max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
+        <div class="items-center max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
             <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
                 <LwIcon name="github" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
                 <LwIcon name="google" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
                 <LwIcon name="microsoft" class="h-6 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
                 <LwIcon name="spotify" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
                 <LwIcon name="mailchimp" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="mashable" class="h-6 sm:h-5 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="mashable" class="h-6 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
                 <!-- <img :src="icons.github" alt="github icon" class=" hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor"/> -->
                 <!-- <img :src="icons.google" alt="google icon" class="filter brightness-75"/>
                 <img :src="icons.microsoft" alt="microsoft icon" class="filter brightness-75"/>
@@ -104,7 +105,7 @@
         </div>
         </div> 
     </section>
-    <section class="bg-white dark:bg-gray-700">
+    <section class="bg-gray-50 dark:bg-gray-700">
         <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
             <div class="col-span-2 mb-8">
                 <p class="text-lg font-medium text-purple-700">
@@ -314,66 +315,57 @@
         <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
             <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Frequently asked questions</h2>
             <div class="max-w-screen-md mx-auto">
-                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                    <h3 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                            <span>Can I use Landwind in open-source projects?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Landwind is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-                        </div>
+                <div class="py-3 border-b border-gray-200 dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(1)">
+                        <span class="font-light text-gray-600">Can I use Landwind in open-source projects?</span>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 1,'fill-gray-500 hover:fill-gray-900': true}"/>
+                    </button>
+                    <div v-if="active === 1" class="px-4 py-2 text-gray-600 dark:text-gray-400">
+                        <p class="text-gray-500">Landwind is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
                     </div>
-                    <h3 id="accordion-flush-heading-2">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                            <span>Is there a Figma file available?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Landwind is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Landwind.</p>
-                        </div>
+                </div>
+                <div class="py-3 border-b border-gray-200 dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(2)">
+                        <span class="font-light text-gray-600">Is there a Figma file available?</span>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 2,'fill-gray-500 hover:fill-gray-900': true}"/>
+                    </button>
+                    <div v-if="active === 2" class="px-4 py-2 text-gray-600 dark:text-gray-400">
+                        <p class="text-gray-500">Landwind is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Landwind.</p>
                     </div>
-                    <h3 id="accordion-flush-heading-3">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                            <span>What are the differences between Landwind and Tailwind UI?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                                <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Landwind Pro</a></li>
-                                <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind UI</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="py-3 border-b border-gray-200 dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(3)">
+                        <span class="font-light text-gray-600">What are the differences between Landwind and Tailwind UI?</span>
+                        <LwIcon name="dropdown" :class="{ 'rotate-180': active === 3, 'fill-gray-500 hover:fill-gray-900': true }"
+            />
+                    </button>
+                    <div v-if="active === 3" class="px-4 py-2 text-gray-600 dark:text-gray-400">
+                        <p class="text-gray-500">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                        <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                            <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Landwind Pro</a></li>
+                            <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind UI</a></li>
+                        </ul>
                     </div>
-                    <h3 id="accordion-flush-heading-4">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
-                            <span>What about browser support?</span>
-                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h3>
-                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                                <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Landwind Pro</a></li>
-                                <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind UI</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="py-3 border-b border-gray-200 dark:border-gray-700">
+                    <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(4)">
+                        <span class="font-light text-gray-600">What about browser support?</span>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 4,'fill-gray-500 hover:fill-gray-900': true}"/>
+                    </button>
+                    <div v-if="active === 4" class="px-4 py-2 text-gray-600 dark:text-gray-400">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Landwind, Landwind Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                        <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                            <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Landwind Pro</a></li>
+                            <li><a href="#" class="text-purple-600 dark:text-purple-500 hover:underline">Tailwind UI</a></li>
+                        </ul>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
      </section>
@@ -400,10 +392,12 @@
     methods: {
     navigateTo(url) {
       window.location.href = url; // Redirect to the specified URL
-    }
+    },
+    toggle(index) {
+      this.active = this.active === index ? null : index; // Toggle the active state
+    },
   }
   };
-  src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js";
   </script>
   
   <style scoped>

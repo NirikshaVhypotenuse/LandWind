@@ -12,7 +12,7 @@
         </div>
   
         <!-- Desktop Navigation Links -->
-        <ul class="hidden lg:flex flex-grow justify-end gap-4 text-gray-600 pr-10 font-bold mx-auto">
+        <ul class="hidden lg:flex flex-grow justify-center gap-6 text-gray-600 pr-10 font-bold mx-auto">
           <li class="hover:text-purple-700"><nuxt-link to="/">Home</nuxt-link></li>
           <li class="hover:text-purple-700"><nuxt-link to="/company">Company</nuxt-link></li>
           <li class="hover:text-purple-700"><nuxt-link to="/marketplace">Marketplace</nuxt-link></li>
