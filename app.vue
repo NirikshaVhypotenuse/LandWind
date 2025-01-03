@@ -1,13 +1,3 @@
-<template>
-  <div>
-    <Navbar />
-    <main>
-      <Hero />
-    </main>
-    <Footer />
-  </div>
-</template>
-
 <script>
 import Hero from '~/components/hero.vue';
 import Navbar from './components/navbar.vue';
@@ -20,3 +10,12 @@ export default {
   },
 };
 </script>
+<template>
+  <div>
+    <Navbar />
+    <main>
+      <Hero />
+    </main>
+    <Footer />
+  </div>
+</template>
