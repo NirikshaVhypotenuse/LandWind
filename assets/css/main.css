@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-purple: #a855f7;
+    --color-purple-hover: #c084fc;
+    --color-gray: #9ca3af;
+    --color-green:#22c55e;
+    --color-green-hover:#15803d;
+    --width:1.25rem ;
+    --height:1.25rem ;
+    --margin-left:0.25rem;
+    --border-top-width: 1px;
+    /* --color-gray-400:  */
+}
