@@ -1,12 +1,16 @@
 <template>
+    <!-- landing page -->
     <section class="bg-white dark:bg-gray-900">
-      <div class="grid max-w-screen-xl px-4 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-10">
+      <div class="grid max-w-screen-xl px-6 pt-10 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-10">
         <div class="mr-auto place-self-center lg:col-span-7">
           <h1 class="text-4xl md:text-6xl font-bold text-gray-900">
             Building digital <span class="text-purple-600">products</span> & <span class="text-purple-600">brands</span>.
           </h1>
-          <p class="mt-4 text-gray-600">
-            This free and open-source landing page template was built using the utility classes from Tailwind CSS.
+          <p class="max-w-2xl mb-6 mt-4 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            This free and open-source landing page template was built using the utility classes from 
+            <a href="https://tailwindcss.com" class="hover:underline"> Tailwind CSS</a> and based on the components from the 
+            <a href="https://flowbite.com/docs/getting-started/introduction/" class="hover:underline"> Flowbite Library</a>
+            and the <a href="https://flowbite.com/blocks/" class="hover:underline">Blocks System</a>.
           </p>
           <div class="mt-6 flex flex-col md:flex-row gap-4">
             <button class="inline-flex items-center justify-center gap-2 bg-gray-100 hover:text-gray-900 text-gray-600 px-6 py-3 rounded shadow" @click="navigateTo('https://github.com/themesberg/landwind')">
@@ -14,7 +18,7 @@
                 <!-- <LwIcon name="git" class="h-4 w-4 flex items-center hover:fill-gray-900 fill-gray-500 "></LwIcon> -->
                 View on GitHub</button>
             <button class="inline-flex items-center justify-center bg-gray-100 text-gray-600 px-6 py-3 rounded shadow" @click="navigateTo('https://www.figma.com/community/file/1125744163617429490')">
-            <img :src="icons.figma" class="w-4 h-4 mr-2 hover:text-gray-900" alt="figma icon">Get Figma file</button>
+            <img :src="icons.figma" class="w-4 h-4 mr-2 hover:text-blue-500" alt="figma icon">Get Figma file</button>
           </div>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -25,12 +29,12 @@
     <section class="bg-white dark:bg-gary-900">
         <div class="items-center max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
             <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-                <LwIcon name="github" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="google" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="microsoft" class="h-6 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="spotify" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="mailchimp" class="h-9 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
-                <LwIcon name="mashable" class="h-6 flex items-center hover:fill-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="github" class="h-9 flex items-center hover:text-gray-900 hover:fill-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="google" class="h-9 flex items-center hover:text-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="microsoft" class="h-6 flex items-center hover:text-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="spotify" class="h-9 flex items-center hover:text-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="mailchimp" class="h-9 flex items-center hover:text-gray-900 fill-gray-500"></LwIcon>
+                <LwIcon name="mashable" class="h-6 flex items-center hover:text-gray-900 fill-gray-500"></LwIcon>
                 <!-- <img :src="icons.github" alt="github icon" class=" hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor"/> -->
                 <!-- <img :src="icons.google" alt="google icon" class="filter brightness-75"/>
                 <img :src="icons.microsoft" alt="microsoft icon" class="filter brightness-75"/>
@@ -42,7 +46,7 @@
     </section>
     <section class="bg-gray-100 dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-            <div class="items-center lg:grid lg:grid-cols-2 xl:gap-16">
+            <div class="items-center lg:grid lg:grid-cols-2 px-2 xl:gap-16">
             <div class="text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4 text-3xl font-extrabold text-gray-900">
                     Work with tools you already use
@@ -71,7 +75,7 @@
         </div>
         <div class="items-center lg:grid lg:grid-cols-2 xl:gap-16">
             <img src="../assets/img/Map.png" class="hidden w-full wb-0 rounded-lg lg:flex" alt="dashboard map image">
-            <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+            <div class="text-gray-500 sm:text-lg px-4 dark:text-gray-400">
                 <h2 class="mb-4 text-3xl font-extrabold text-gray-900">
                     We invest in the world’s potential
                 </h2>
@@ -107,7 +111,7 @@
     </section>
     <section class="bg-gray-50 dark:bg-gray-700">
         <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
-            <div class="col-span-2 mb-8">
+            <div class="col-span-2 mb-8 px-2">
                 <p class="text-lg font-medium text-purple-700">
                     Trusted Worldwide
                 </p>
@@ -170,6 +174,7 @@
             </div>
         </div>
     </section>
+    <!-- Review page -->
     <section class="bg-gray-50">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <div class="max-w-screen-md mx-auto">
@@ -188,6 +193,7 @@
             </div>
         </div>
     </section>
+    <!-- Subscription page -->
     <section class="bg-white">
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
             <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
@@ -318,7 +324,7 @@
                 <div class="py-3 border-b border-gray-200 dark:border-gray-700">
                     <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(1)">
                         <span class="font-light text-gray-600">Can I use Landwind in open-source projects?</span>
-                        <LwIcon name="dropdown" :class="{'rotate-180': active === 1,'fill-gray-500 hover:fill-gray-900': true}"/>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 1, 'rotate-0': active !== 1, 'fill-gray-500 hover:fill-gray-900': true}"/>
                     </button>
                     <div v-if="active === 1" class="px-4 py-2 text-gray-600 dark:text-gray-400">
                         <p class="text-gray-500">Landwind is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
@@ -328,7 +334,7 @@
                 <div class="py-3 border-b border-gray-200 dark:border-gray-700">
                     <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(2)">
                         <span class="font-light text-gray-600">Is there a Figma file available?</span>
-                        <LwIcon name="dropdown" :class="{'rotate-180': active === 2,'fill-gray-500 hover:fill-gray-900': true}"/>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 2, 'rotate-0': active !== 2, 'fill-gray-500 hover:fill-gray-900': true}"/>
                     </button>
                     <div v-if="active === 2" class="px-4 py-2 text-gray-600 dark:text-gray-400">
                         <p class="text-gray-500">Landwind is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
@@ -338,8 +344,7 @@
                 <div class="py-3 border-b border-gray-200 dark:border-gray-700">
                     <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(3)">
                         <span class="font-light text-gray-600">What are the differences between Landwind and Tailwind UI?</span>
-                        <LwIcon name="dropdown" :class="{ 'rotate-180': active === 3, 'fill-gray-500 hover:fill-gray-900': true }"
-            />
+                        <LwIcon name="dropdown" :class="{ 'rotate-180': active === 3, 'rotate-0': active !== 3,   'fill-gray-500 hover:fill-gray-900': true }"/>
                     </button>
                     <div v-if="active === 3" class="px-4 py-2 text-gray-600 dark:text-gray-400">
                         <p class="text-gray-500">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages</p>
@@ -354,7 +359,7 @@
                 <div class="py-3 border-b border-gray-200 dark:border-gray-700">
                     <button class="flex items-center justify-between w-full px-4 py-3 text-left text-gray-900 dark:text-white focus:outline-none" @click="toggle(4)">
                         <span class="font-light text-gray-600">What about browser support?</span>
-                        <LwIcon name="dropdown" :class="{'rotate-180': active === 4,'fill-gray-500 hover:fill-gray-900': true}"/>
+                        <LwIcon name="dropdown" :class="{'rotate-180': active === 4, 'rotate-0': active !== 4,  'fill-gray-500 hover:fill-gray-900': true}"/>
                     </button>
                     <div v-if="active === 4" class="px-4 py-2 text-gray-600 dark:text-gray-400">
                         <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Landwind are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Landwind relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
@@ -369,6 +374,7 @@
             </div>
         </div>
      </section>
+     <!-- free trial option page -->
     <section class="bg-gray-50">
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
             <div class="max-w-screen-sm mx-auto text-center">
@@ -385,10 +391,15 @@
         </div>
     </section>
   </template>
-  
+
   <script>
   export default {
     name: 'Hero',
+    data() {
+    return {
+      active: null, // Tracks the currently active FAQ
+    };
+    },
     methods: {
     navigateTo(url) {
       window.location.href = url; // Redirect to the specified URL

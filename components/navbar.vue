@@ -1,6 +1,6 @@
 <template>
     <nav class="bg-white shadow-md">
-      <div class="!w-full flex justify-between p-4">
+      <div class="!w-full flex justify-between p-4 py-4">
         <!-- Logo and Brand Name -->
         <div class="flex items-center gap-4">
           <!-- Logo -->
@@ -12,7 +12,7 @@
         </div>
   
         <!-- Desktop Navigation Links -->
-        <ul class="hidden lg:flex flex-grow justify-center gap-6 text-gray-600 pr-10 font-bold mx-auto">
+        <ul class="hidden lg:flex flex-grow justify-center gap-8 my-2 text-gray-600 pr-10 font-bold mx-auto">
           <li class="hover:text-purple-700"><nuxt-link to="/">Home</nuxt-link></li>
           <li class="hover:text-purple-700"><nuxt-link to="/company">Company</nuxt-link></li>
           <li class="hover:text-purple-700"><nuxt-link to="/marketplace">Marketplace</nuxt-link></li>
@@ -28,7 +28,10 @@
           <button @click="navigateTo('https://github.com/themesberg/landwind')" class="hidden mx-full md:flex bg-gray-100 text-gray-600 px-3 py-2 rounded">star</button>
           <button @click="navigateTo('https://themesberg.com/product/tailwind-css/landing-page')" class="mx-full w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</button>
         </div> -->
-        <button @click="navigateTo('https://github.com/themesberg/landwind')" class="hidden mx-full md:flex bg-gray-100 text-gray-600 px-3 py-2 rounded">star</button>
+        <button @click="navigateTo('https://github.com/themesberg/landwind')" class="hidden mx-full items-center md:flex gap-1 bg-gray-100 hover:bg-gray-300 hover:text-gray-900 text-gray-600 pl-2 rounded shadow">
+          <LwIcon name="star" viewBox="0 0 16 16" width="16" height="16" class="items-start"></LwIcon><span class="mb-1 mt-1 pr-1 font-semibold text-gray-900 text-xs"> Star</span>
+          <a href="https://github.com/themesberg/landwind/stargazers" class="px-2 py-1 bg-white items-start"><span class="hover:text-blue-600 text-gray-900 font-semibold mb-2 mt-0.5 text-xs">915</span></a>
+        </button>
           <button @click="navigateTo('https://themesberg.com/product/tailwind-css/landing-page')" class="mx-full w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</button>
           <!-- Mobile Menu Button -->
           <button 
